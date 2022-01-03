@@ -5,6 +5,6 @@ import UserCard from 'flarum/forum/components/UserCard';
 app.initializers.add('datlechin/flarum-usercard-uid', () => {
   extend(UserCard.prototype, 'infoItems', function (items) {
     const uid = this.attrs.user.id();
-    items.add('uid', app.translator.trans('datlechin-usercard-uid.forum.uid_text', { uid }), 1);
+    items.add('uid', app.translator.trans('datlechin-usercard-uid.forum.uid_text', { uid }), 60);
   });
 });
