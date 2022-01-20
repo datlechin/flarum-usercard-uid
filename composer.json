@@ -3,7 +3,8 @@
     "description": "Show the user id on the usercard.",
     "keywords": [
         "flarum",
-        "flarum-extension"
+        "flarum-extension",
+        "usercard uid"
     ],
     "type": "flarum-extension",
     "license": "MIT",
@@ -35,6 +36,23 @@
                 "name": "fas fa-id-card",
                 "backgroundColor": "#D3241C",
                 "color": "#fff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": false,
+                "forum": true,
+                "js": true,
+                "jsCommon": false,
+                "css": false,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
             }
         }
     }
